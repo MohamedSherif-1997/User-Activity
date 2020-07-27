@@ -10,7 +10,7 @@ import TableHead from "@material-ui/core/TableHead";
 import TableRow from "@material-ui/core/TableRow";
 import Paper from "@material-ui/core/Paper";
 
-import UserModal from "../Ui/modal";
+import UserModal from "../Component/modal";
 
 const tableStyle = {
   tableContainer: {
@@ -43,7 +43,11 @@ function UserActivitiesTable(props) {
       <TableContainer component={Paper}>
         <Table>
           <TableHead className={classes.tableHead}>
-            <TableRow>
+            <TableRow
+              style={{
+                fontFamily: '"Times New Roman", Times, serif',
+              }}
+            >
               <TableCell>ID</TableCell>
               <TableCell>NAME</TableCell>
               <TableCell>REGION</TableCell>
