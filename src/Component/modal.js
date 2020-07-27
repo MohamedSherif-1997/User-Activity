@@ -65,7 +65,7 @@ function UserModal(props) {
       <div className={classes.title}>Activites of:{user.real_name}</div>
       <div className={classes.table}>
         <TableContainer component={Paper}>
-          <Table style={{ border: "2px solid yellow" }}>
+          <Table style={{ border: "4px solid pink" }}>
             <TableHead>
               <TableRow
                 style={{
