@@ -19,8 +19,9 @@ const styles = {
     zIndex: 1300,
     display: "flex",
     flexDirection: "column",
-    flexWrap: "wrap",
+    flexWrap: "column-wrap",
     border: "4px solid black",
+    overFlow: "auto",
   },
   title: {
     display: "flex",
@@ -64,9 +65,14 @@ function UserModal(props) {
       <div className={classes.title}>Activites of:{user.real_name}</div>
       <div className={classes.table}>
         <TableContainer component={Paper}>
-          <Table>
+          <Table style={{ border: "2px solid yellow" }}>
             <TableHead>
-              <TableRow>
+              <TableRow
+                style={{
+                  backgroundColor: "hotpink",
+                  fontFamily: '"Times New Roman", Times, serif',
+                }}
+              >
                 <TableCell>Staring Date</TableCell>
                 <TableCell>Ending Date</TableCell>
                 <TableCell>Active Duration</TableCell>
